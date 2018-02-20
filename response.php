@@ -1,4 +1,3 @@
-
 <?php
 	include_once("connection.php");
 	 
@@ -26,8 +25,8 @@
 		$where .=" ( name LIKE '".$params['search']['value']."%' ";    
 		$where .=" OR phone LIKE '".$params['search']['value']."%' ";
 
-		$where .=" OR email LIKE '".$params['search']['value']."%' )";
-		$where .=" OR address LIKE '".$params['search']['value']."%' )";
+		$where .=" OR email LIKE '".$params['search']['value']."%' ";
+		$where .=" OR address LIKE '".$params['search']['value']."%' ";
 		$where .=" OR info LIKE '".$params['search']['value']."%' )";
 	}
 
